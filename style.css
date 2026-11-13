@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap');
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html { min-height: 100%; background: #050205; }
+body {
+  min-height: 100vh;
+  color: #f1dce4;
+  background: radial-gradient(ellipse at 50% 43%, #1a0710 0%, #0b0409 48%, #030203 100%);
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  overflow-x: hidden;
+}
+.page { width: 100%; min-height: 100vh; display: flex; flex-direction: column; align-items: center; text-align: center; padding: 30px 12px 42px; }
+.heading { position: relative; z-index: 1; }
+.eyebrow { color: #a96b80; font: 11px Arial, sans-serif; letter-spacing: 5px; margin: 5px 0 12px; }
+h1 { color: #a51c4c; font: 600 clamp(28px, 5vw, 48px)/1.2 'Playfair Display', Georgia, serif; text-shadow: 0 0 14px #8f174355, 0 0 30px #8f174322; }
+.subtitle { margin-top: 12px; color: #c39aaa; font-size: 17px; letter-spacing: 1.5px; }
+.flower-wrap { width: min(100%, 720px); margin: 4px auto 0; }
+#roseCanvas { display: block; width: 100%; height: auto; }
+.message { max-width: 560px; padding: 8px 18px; }
+.message h2 { color: #b33b65; font: 600 28px 'Playfair Display', Georgia, serif; text-shadow: 0 0 15px #8b133933; }
+.message p { margin-top: 10px; color: #c6a1af; font-size: 19px; line-height: 1.5; }
+.message .forever { color: #d17c9a; font: 12px Arial, sans-serif; letter-spacing: 2.5px; }
+.controls { margin-top: 22px; }
+button { border: 1px solid #8e254b; border-radius: 40px; padding: 12px 27px; color: #e9a2bb; background: #650b292e; font: 18px 'Cormorant Garamond', Georgia, serif; cursor: pointer; transition: .3s ease; }
+button:hover:not(:disabled) { color: #fff0f5; background: #650b29; box-shadow: 0 0 16px #9b174566, 0 0 30px #9b174533; transform: translateY(-2px); }
+button:disabled { opacity: .4; cursor: not-allowed; }
+#musicStatus { min-height: 20px; margin: 10px 0 14px; color: #a77a8c; font-size: 14px; }
+footer { margin-top: 30px; color: #805467; font-size: 14px; letter-spacing: 1.5px; }
+@media (max-width: 600px) { .page { padding: 24px 8px 32px; } .eyebrow { font-size: 9px; letter-spacing: 3px; } .subtitle { font-size: 14px; } .message h2 { font-size: 24px; } .message p { font-size: 16px; } button { font-size: 16px; } }
